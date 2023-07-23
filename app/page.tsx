@@ -9,7 +9,7 @@ import patternQuotes from "@/images/pattern-quotes.svg";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between  bg-white text-black relative">
-      <div className="flex  w-[70%] fixed left-0  top-48 px-36 z-40">
+      <div className="flex  w-[64%] fixed left-0  top-48 px-36 z-40">
         <Image
           className="fixed w-24 h-16 left-52 top-36 "
           src={patternQuotes}
@@ -24,20 +24,25 @@ export default function Home() {
           <p className="font-bold">
             {" "}
             Tanya Sinclair{" "}
-            <span className="font-bold text-gray">UX Engineer</span>
+            <span className="font-bold text-gray-400">UX Engineer</span>
           </p>
         </div>
       </div>
-      <div className=" fixed    right-32   top-10 ">
-        <Image className=" z-0 w-[450px] h-[450px] " src={patternBG} alt={""} />
+      <div className=" fixed    right-52   top-10 ">
+        <Image className=" z-0 w-[480px] h-[460px] " src={patternBG} alt={""} />
         <Image
-          className="fixed z-20 top-[85px]  shadow-lg w-[375px] h-[375px] right-44"
+          className="fixed z-20 top-[85px]  shadow-lg w-[380px] h-[380px] right-64 rounded-md"
           src={AvatarTanya}
           alt={""}
         />
-        {/* <div className=" bg-green-300 fixed w-[50%]  right-0 flex  p-14 ">
-    
-        </div> */}
+        <div className="flex bg-white w-20 h-10 justify-between p-2 rounded-3xl bg fixed top-[440px] right-[510px] z-50 shadow-lg">
+          <button>
+            <Image src={previousButton} alt={""} />{" "}
+          </button>
+          <button>
+            <Image src={nextButton} alt={""} />{" "}
+          </button>
+        </div>
       </div>
       <Image
         className="fixed z-20 bottom-0 left-0 shadow-lg w-[35%] h-20 "
